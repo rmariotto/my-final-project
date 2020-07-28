@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: rgba(249, 136, 31, 1);
+  padding: 20px;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 20px;
+  color: rgba(249, 136, 31, 1);
+  padding: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.p-resetpass{
+  color: white;
+}
+
+.p-registration{
+  color: white;
+  font-size: 20px;
+}
+
+.pregister {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.image-registration {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.path-login {
+  display: block;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+p {
+  color: rgba(249, 136, 31, 1);
+  text-align: center;
+}
+
+img {
+  width: 40vw;
+  height: 60vh;
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+
+.update-img {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.inputfile {
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(249, 136, 31, 1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.inputfileReset {
+  margin: 10px 10px 10px 100px;
+  border: none;
+  border-bottom: 1px solid rgba(249, 136, 31, 1);
+}
+
+.btn {
+  color: rgba(249, 136, 31, 1);
+  text-transform: uppercase;
+  margin: auto;
+  padding: 3px;
+  border: 1px solid rgba(249, 136, 31, 1);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-profile-logo {
+  width: 5%;
+  height: 5%;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bio-inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bio-text {
+  margin-bottom: 5px;
+}
+
+.nav {
+  position: fixed;
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  background-color: orange;
+  padding: 40px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.reset-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profilePic {
+  display: flex;
+}
+
+.uploader-ts {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-video {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-register {
+  display: flex;
+  justify-content: center;
+}
+
+.router {
+  display: flex;
+  justify-content: center;
+  background-color:  rgba(249,212,31,1);
+  padding: 25vh;
+}
+
+.router-input {
+  color: rgba(249, 136, 31, 1);
+  display: block;
+  margin: auto;
+  padding: 3px;
+  border: 1px solid rgba(249, 136, 31, 1);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.login {
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.logout {
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px 10px;
+  color: white;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-up {
+  margin: 0px 6px;
+  color: rgba(249, 136, 31, 1);
+  text-transform: uppercase;
+  padding: 3px;
+  border: 1px solid rgba(249, 136, 31, 1);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+iframe {
+  margin: 0 10px 60px;
+}
+
+.videos-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.sub-title {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.sub-content {
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container {
+  width: 50%;
+  margin: 100px auto;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#close-modal-box {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: 0.3s;
+}
+
+.p-footer {
+  color: white;
+}
+
+footer{
+  padding: 40px;
+  background-color: rgb(189, 108, 32);
+}
+
+.welome-footer{
+  color: rgba(249, 136, 31, 1);
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+}
