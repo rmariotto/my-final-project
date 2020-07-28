@@ -11,20 +11,20 @@ export default class Content extends React.Component {
         };
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
-        this.componentDidMount = this.componentDidMount.bind(this);
+        // this.componentDidMount = this.componentDidMount.bind(this);
     }
 
-    componentDidMount() {
-        axios.get("/videos").then((result) => {
-            this.setState(
-                {
-                    list: result.data,
-                });
-        })
-            .catch((err) => {
-                console.log('err in get axios /videos:', err);
-            });
-    }
+    // componentDidMount() {
+    //     axios.get("/videos").then((result) => {
+    //         this.setState(
+    //             {
+    //                 list: result.data,
+    //             });
+    //     })
+    //         .catch((err) => {
+    //             console.log('err in get axios /videos:', err);
+    //         });
+    // }
 
     openModal(video) {
         this.setState({ video: video });
