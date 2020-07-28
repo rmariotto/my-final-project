@@ -11,9 +11,10 @@ const {
     getCode,
     newPassword,
 } = require('./db');
-const { sendEmail } = require('./ses');
+const { sendEmail } = require('./src/ses');
+const { getVideos } = require("./src/yt")
 app.use(compression());
-const request = require('request');
+
 
 app.use(
     cookieSession({
@@ -185,11 +186,17 @@ app.post("/resetPassword/verify", (req, res) => {
 });
 
 app.get('/videos', (req, res) => {
-    request.get('https://www.googleapis.com/youtube/v3/search?key=AIzaSyDkfMJuhNUyrhwevxGIGu6TCZJFhuTNf58&q=mindfulness&part=snippet&maxResults=20', function(error, response, body){
-        res.json(JSON.parse(body).items.map((item) => {
-            return item.id.videoId;
-        }));
-    })
+
+    getVideos("mindfulness")
+        .then((result) => {
+            res.json(result)
+        })
+        .catch((err) => {
+            res.json();
+            console.log("error in get videos: ", err);
+            res.sendStatus(500);
+
+        })
 
 });
 

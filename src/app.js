@@ -31,6 +31,10 @@ export default class App extends React.Component {
     return (
       <div className="app-container">
         <div className="nav">
+          <div className="nav-subtitle">
+          <p>Mindspace is a place to experience the benefits of meditation anytime, anywhere with awesome videos.</p>
+          </div>
+          
           <a href="/logout" className="logout">logout</a>
         </div>
         <BrowserRouter>
@@ -49,10 +53,9 @@ export default class App extends React.Component {
               )}
             />
           </div>
-          
-        </BrowserRouter>
 
-        <footer><p className="p-footer">Mindspace is a place to experience the benefits of meditation anytime, anywhere with awesome videos.</p></footer>
+        </BrowserRouter>
+        <footer className="welome-footer">© 2020 MINDSPACE FINAL PROJECT SPICED ACADEMY</footer>
       </div >
     );
   }

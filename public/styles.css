@@ -297,3 +297,10 @@ footer{
   font-weight: 700;
   margin-top: 10px;
 }
+
+.nav-subtitle p {
+  color: aliceblue;
+  font-style: italic;
+  font-size: 18px;
+  margin-right: 180px;
+}

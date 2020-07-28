@@ -25,7 +25,7 @@ export default class Content extends React.Component {
                 console.log('err in get axios /videos:', err);
             });
     }
-
+    
     openModal(video) {
         this.setState({ video: video });
         console.log("open modal cliked!!!!!");
@@ -46,7 +46,6 @@ export default class Content extends React.Component {
     }
 
     render() {
-        const { unsubscribedTrailer } = this.state;
         return (
             <div className="content">
                 <div className="sub-content">
@@ -58,7 +57,6 @@ export default class Content extends React.Component {
 
                 <div className="videos-container">
                     {this.images()}
-                    
                 </div>
 
                 {this.state.video && (<Modal video={this.state.video} closeModal={this.closeModal} />)}
