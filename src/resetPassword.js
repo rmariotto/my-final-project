@@ -69,6 +69,7 @@ export default class ResetPassword extends React.Component {
             return (
                 <div className="input-container">
                     <form autoComplete="off" >
+                        <p className="p-resetpass">Please enter your code and your new password</p>
                         <input className="inputfile" type="text" name="secretCode" value={this.state.secretCode} placeholder="code" autoComplete="off" onChange={e => this.handleChange(e)} />
                         <input className="inputfile" type="password" name="newPassword" placeholder="new password" autoComplete="off" onChange={e => this.handleChange(e)} />
                         <input className="inputfile" type="submit" value="submit" className="btn" onClick={e => this.submit(e)} />

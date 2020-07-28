@@ -7,8 +7,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-
 h2 {
   color: rgba(249, 136, 31, 1);
   padding: 20px;
@@ -30,6 +28,8 @@ h3 {
 
 .p-resetpass {
   color: white;
+  font-size: 25px;
+  font-style: italic;
 }
 
 .p-registration {
@@ -103,7 +103,7 @@ img {
   color: rgba(249, 136, 31, 1);
   text-transform: uppercase;
   margin: auto;
-  padding: 3px;
+  padding: 5px;
   border: 1px solid rgba(249, 136, 31, 1);
   border-radius: 3px;
   cursor: pointer;
@@ -153,6 +153,9 @@ img {
 }
 
 .reset-login {
+  color: aliceblue;
+  padding: 10px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +319,7 @@ footer {
 
 /* scroll button to top*/
 .scrollTop {
-  position: fixed; 
+  position: fixed;
   width: 192%;
   bottom: 20px;
   align-items: center;
@@ -329,7 +332,7 @@ footer {
   opacity: 0.5;
 }
 
-.scrollTop:hover{
+.scrollTop:hover {
   opacity: 1;
 }
 

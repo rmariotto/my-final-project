@@ -133,8 +133,8 @@ app.post("/resetPassword/start", (req, res) => {
                     console.log('result in add Reset COde', result);
 
                     sendEmail(email,
-                        `code to reset password: ${secretCode}`,
-                        'reset password')
+                        'Reset your password',
+                        `Your code to reset the password: ${secretCode}`,)
                         .then(() => {
                             res.json();
                         })

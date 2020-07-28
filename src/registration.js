@@ -56,7 +56,7 @@ export default class Registration extends React.Component {
                     <input className="inputfile" type="text" name="first" placeholder="first name" value={this.state.first} autoComplete="off" onChange={e => this.handleChange(e)} />
                     <input className="inputfile" type="text" name="last" placeholder="last name" value={this.state.last} autoComplete="off" onChange={e => this.handleChange(e)} />
                     <input className="inputfile" type="email" name="email" placeholder="email" value={this.state.email} autoComplete="off" onChange={e => this.handleChange(e)} />
-                    <input className="inputfile" type="password" name="password" placeholder="password" value={this.state.password} autoComplete="off" onChange={e => this.handleChange(e)} />
+                    <input className="inputfile" type="password" name="password" placeholder="password" value={this.state.password} autoComplete="new-password" onChange={e => this.handleChange(e)} />
                     <input type="submit" value="register" className="btn" onClick={e => this.submitRegister(e)} />
                     <Link to='/login' className="login">login</Link>
                     {this.state.error &&
