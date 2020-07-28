@@ -45,7 +45,7 @@ if (process.env.NODE_ENV != 'production') {
 }
 
 
-////////////////routes/////////////////////
+////////////////ROUTES/////////////////////
 
 app.get('/welcome', (req, res) => {
     if (req.session.userId) {

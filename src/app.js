@@ -3,6 +3,7 @@ import axios from "./axios";
 import { BrowserRouter, Route } from "react-router-dom";
 import Content from "./content";
 import { Link } from 'react-router-dom';
+import Scroll from "./scrollButton";
 
 export default class App extends React.Component {
 
@@ -12,14 +13,12 @@ export default class App extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
   }
 
-
   componentDidMount() {
     axios.get("/user").then((result) => {
       this.setState(
         {
           first: result.data.first,
           last: result.data.last,
-
         });
     })
       .catch((err) => {
@@ -32,9 +31,8 @@ export default class App extends React.Component {
       <div className="app-container">
         <div className="nav">
           <div className="nav-subtitle">
-          <p>Mindspace is a place to experience the benefits of meditation anytime, anywhere with awesome videos.</p>
+            <p>Mindspace is a place to experience the benefits of meditation anytime, anywhere with awesome videos.</p>
           </div>
-          
           <a href="/logout" className="logout">logout</a>
         </div>
         <BrowserRouter>
@@ -52,6 +50,8 @@ export default class App extends React.Component {
               )}
             />
           </div>
+
+          <Scroll />
           
         </BrowserRouter>
         <footer className="welome-footer">© 2020 MINDSPACE FINAL PROJECT SPICED ACADEMY</footer>

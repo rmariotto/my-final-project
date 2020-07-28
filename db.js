@@ -5,7 +5,7 @@ if (process.env.DATABASE_URL) {
     db = spicedPg(process.env.DATABASE_URL);
 } else {
     const { pg } = require("./secrets.json");
-    db = spicedPg(`postgres:${pg.user}:${pg.pass}@localhost:5432/socialnetwork`);
+    db = spicedPg(`postgres:${pg.user}:${pg.pass}@localhost:5432/mindspace`);
 }
 
 exports.addUsers = (first, last, email, password) => {
