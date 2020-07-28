@@ -26,11 +26,11 @@ h3 {
   text-align: center;
 }
 
-.p-resetpass{
+.p-resetpass {
   color: white;
 }
 
-.p-registration{
+.p-registration {
   color: white;
   font-size: 20px;
 }
@@ -145,7 +145,7 @@ img {
   justify-content: flex-end;
   cursor: pointer;
   background-color: orange;
-  padding: 40px;
+  padding: 50px;
   width: 100%;
   margin-left: 0px;
 }
@@ -184,7 +184,7 @@ img {
 .router {
   display: flex;
   justify-content: center;
-  background-color:  rgba(249,212,31,1);
+  background-color: rgba(249, 212, 31, 1);
   padding: 25vh;
 }
 
@@ -284,12 +284,12 @@ iframe {
   color: white;
 }
 
-footer{
+footer {
   padding: 40px;
   background-color: rgb(189, 108, 32);
 }
 
-.welome-footer{
+.welome-footer {
   color: rgba(249, 136, 31, 1);
   padding: 20px;
   background-color: white;
@@ -301,6 +301,13 @@ footer{
 .nav-subtitle p {
   color: aliceblue;
   font-style: italic;
-  font-size: 18px;
-  margin-right: 180px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+.hello-user {
+  font-size: 20px;
+  color: orange;
+  padding: 20px;
+  font-style: italic;
 }

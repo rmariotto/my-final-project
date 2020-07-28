@@ -15,6 +15,13 @@ exports.addUsers = (first, last, email, password) => {
     );
 };
 
+exports.getUser = (id) => {
+    return db.query(
+        `SELECT * FROM users WHERE id = $1`,
+        [id]
+    );
+};
+
 exports.getUserByEmail = (email) => {
     return db.query(
         `SELECT * FROM users WHERE email = $1`,

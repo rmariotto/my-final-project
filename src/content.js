@@ -49,7 +49,7 @@ export default class Content extends React.Component {
         return (
             <div className="content">
                 <div className="sub-content">
-                    <h1>Hello {this.props.first} {this.props.last}</h1>
+                    <h1 className="hello-user">Hello {this.props.first} {this.props.last}</h1>
                     <p className="sub-title">
                         <strong>Let's find out the latest videos on MINDSPACE:</strong>
                     </p>

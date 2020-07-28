@@ -49,11 +49,10 @@ export default class App extends React.Component {
                   first={this.state.first}
                   last={this.state.last}
                 />
-
               )}
             />
           </div>
-
+          
         </BrowserRouter>
         <footer className="welome-footer">© 2020 MINDSPACE FINAL PROJECT SPICED ACADEMY</footer>
       </div >

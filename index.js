@@ -10,6 +10,7 @@ const {
     addResetCode,
     getCode,
     newPassword,
+    getUser
 } = require('./db');
 const { sendEmail } = require('./src/ses');
 const { getVideos } = require("./src/yt")
@@ -182,6 +183,17 @@ app.post("/resetPassword/verify", (req, res) => {
         .catch((err) => {
             console.log("error in POST /register: ", err);
             res.sendStatus(500);
+        });
+});
+
+app.get('/user', (req, res) => {
+
+    getUser(req.session.userId)
+        .then((result) => {
+            res.json(result.rows[0]);
+        })
+        .catch((err) => {
+            console.log('err in get /user:', err);
         });
 });
 
