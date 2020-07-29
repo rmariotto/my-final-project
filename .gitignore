@@ -4,5 +4,3 @@ package.json
 node_modules
 .DS_Store
 secrets.json
-index.js
-youtube.json
